@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+    body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+.contenedor {
+   
+    background: hsl(244, 38%, 16%);
+    color: white;
+    width: 800px;
+    border-radius: 10px;
+}
+    
+.titulo {
+    display: flex;
+    position: relative;
+    height: auto;
+
+}
+    
+.texto{
+    width: 120%;
+}
+
+h1 {
+    margin:20px 40px 20px 35px;
+    padding: 5px;
+    font-size: 24px;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+    
+.parrafo {
+    margin: 15px 20px 40px 35px;
+    font-size: 15px;
+    padding: 5px
+}
+    
+.number{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+    font-size: 15px;
+}
+
+.number h3{
+    margin: 0;
+    padding: 0;
+}
+
+.number p{
+    margin-top: 0px;
+}
+
+img{
+    width: 30vw;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.image {
+    position: relative;
+}
+
+.front-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    background: hsla(277, 70%, 38%, 0.37);
+    top: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    .contenedor{
+        width: 90%;
+    }
+   
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .image{
+        width: 100%;
+        height: 30vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    img{
+
+        width: 100%;
+        height: 30vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .front-image{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .texto h1{
+        text-align: center;
+    }
+
+    .texto p{
+        text-align: center;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .number{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .number h3{
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .number p{
+        font-size: 10px;
+        margin: 5px;
+        padding: 0;   
+    } 
+
+} 
